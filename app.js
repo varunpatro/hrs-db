@@ -15,7 +15,7 @@ app.post('/post', function (req, res) {
 		if (to_store[req.body.block] === undefined) {
 			to_store[req.body.block] = {};
 		}
-		(to_store[req.body.block])[req.body.flat] = req.body.tel;
+		(to_store[req.body.block])[req.body.flat] = [req.body.tel1, req.body.tel2, req.body.tel3];
 
 		fs.writeFile('data.json',  JSON.stringify(to_store), function (err) {
 		  if (err) throw err;
