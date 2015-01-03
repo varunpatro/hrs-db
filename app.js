@@ -1,12 +1,22 @@
 var express = require('express');
 var fs = require('fs');
+var path = require('path');
 var app = express();
+var multer = require('multer');
 var bodyParser = require('body-parser');
+var tools = require('./tools.js');
 
-app.use(bodyParser());	
+app.use(multer({
+  dest: './uploads/',
+  rename: function (fieldname, filename) {
+    return filename + '_' + Date.now();
+  }
+}));
+app.use(bodyParser());
+// app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function (req, res) {
-	res.sendfile('form.html');
+app.get('/', function(req, res) {
+    res.sendfile('form.html');
 });
 
 app.post('/post', function (req, res) {
@@ -20,15 +30,23 @@ app.post('/post', function (req, res) {
 		fs.writeFile('data.json',  JSON.stringify(to_store), function (err) {
 		  if (err) throw err;
 		});
-		
+
 	});
 	res.sendfile('confirm.html');
 });
-
 
 app.get('/get', function (req, res) {
 	res.sendfile('data.json');
 });
 
+app.post('/upload', function(req, res) {
+	if (path.extname(req.files.file.path) !== '.csv') {
+        res.send("Incorrect file uploaded. Please upload a CSV file.");
+    } else {
+    	tools.update_data(req.files.file.path);
+	    res.sendfile('confirm.html');
+    }
+	
+});
 
 app.listen(3000);
