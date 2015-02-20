@@ -49,4 +49,16 @@ app.post('/upload', function(req, res) {
 	
 });
 
-app.listen(3000);
+app.post('/call_log', function(req, res) {
+	res.send(req.body);
+	fs.writeFile('call_log.json', req.body.toString(), function(err){
+		if (err) throw err;
+		console.log('call logs saved');
+
+	});
+});
+
+app.get('/call_log', function(req, res) {
+res.sendfile('call_log.json');
+});
+app.listen(5000);
