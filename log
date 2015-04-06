@@ -1,17 +1,77 @@
-Fri, 20 Feb 2015 17:48:09 GMT body-parser deprecated bodyParser: use individual json/urlencoded middlewares at app.js:15:9
-Fri, 20 Feb 2015 17:48:09 GMT body-parser deprecated undefined extended: provide extended option at node_modules/body-parser/index.js:85:29
-
-events.js:72
-        throw er; // Unhandled 'error' event
-              ^
-Error: listen EADDRINUSE
-    at errnoException (net.js:904:11)
-    at Server._listen2 (net.js:1042:14)
-    at listen (net.js:1064:10)
-    at Server.listen (net.js:1138:5)
-    at EventEmitter.app.listen (/root/hrs-db/node_modules/express/lib/application.js:559:24)
-    at Object.<anonymous> (/root/hrs-db/app.js:64:5)
-    at Module._compile (module.js:456:26)
-    at Object.Module._extensions..js (module.js:474:10)
-    at Module.load (module.js:356:32)
-    at Function.Module._load (module.js:312:12)
+Fri, 20 Feb 2015 17:56:34 GMT body-parser deprecated bodyParser: use individual json/urlencoded middlewares at app.js:15:9
+Fri, 20 Feb 2015 17:56:34 GMT body-parser deprecated undefined extended: provide extended option at node_modules/body-parser/index.js:85:29
+Fri, 20 Feb 2015 17:56:47 GMT express deprecated res.sendfile: Use res.sendFile instead at app.js:39:6
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+Sun, 22 Feb 2015 10:42:50 GMT express deprecated res.sendfile: Use res.sendFile instead at app.js:19:9
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+Sun, 22 Feb 2015 10:53:44 GMT express deprecated res.sendfile: Use res.sendFile instead at app.js:35:6
+{ '11': '6969', '48': '69696969', '1424454015': '69696969' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321' }
+Tue, 24 Feb 2015 08:38:13 GMT express deprecated res.sendfile: Use res.sendFile instead at app.js:63:5
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321' }
+{ '11': '6969',
+  '48': '69696969',
+  '1424454015': '69696969',
+  '1424601686': '9866977167',
+  '1424767149': '87654321',
+  '1424799583': '82458373' }
